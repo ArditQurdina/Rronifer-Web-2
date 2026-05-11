@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:wght@200;300&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-color: #0d0d0d;
+  --accent: #f18a21;
+  --text-color: rgba(255, 255, 255, 0.9);
+}
+
+.light-leak {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(241, 138, 33, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+  filter: blur(80px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   LOGO WRAP (REVEAL)
+========================= */
+.logo-wrap {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: elegantFadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.2s;
+}
+
+.main-logo {
+  width: 700px;
+  max-width: 85vw;
+  display: block;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+/* =========================
+   LIGHT SWEEP
+========================= */
+.logo-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      rgba(241, 138, 33, 0.15),
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transform: skewX(-30deg);
+  animation: sweep 1.8s ease-in-out forwards 0.7s;
+}
+
+/* =========================
+   SEPARATOR LINE
+========================= */
+.separator {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  margin-top: 25px;
+  opacity: 0;
+  animation: lineExpand 2s ease-out forwards 1.5s;
+}
+
+/* =========================
+   TAGLINE TEXT
+========================= */
+.tagline {
+  margin-top: 20px;
+  color: var(--text-color);
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
+  opacity: 0;
+  animation: textBreath 3s ease-out forwards 2s;
+}
+
+/* =========================
+   FLOATING MOTION
+========================= */
+.float-container {
+  animation: floating 6s ease-in-out infinite alternate;
+}
+
+/* =========================
+   KEYFRAMES
+========================= */
+@keyframes elegantFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    filter: blur(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes sweep {
+  0% {
+    left: -150%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes lineExpand {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 60%;
+    opacity: 0.6;
+  }
+}
+
+@keyframes textBreath {
+  0% {
+    opacity: 0;
+    letter-spacing: 1rem;
+  }
+
+  100% {
+    opacity: 0.5;
+    letter-spacing: 1.5rem;
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* BODY */
+
+@keyframes wordSlider {
+
+  /* FIRST WORD */
+  0% {
+    transform: translateY(-66.666%);
+  }
+
+  30% {
+    transform: translateY(-66.666%);
+  }
+
+  /* next word comes FROM TOP and overshoots DOWN */
+  42% {
+    transform: translateY(-28%);
+  }
+
+  /* settles back UP into correct place */
+  50% {
+    transform: translateY(-33.333%);
+  }
+
+  80% {
+    transform: translateY(-33.333%);
+  }
+
+  /* first word comes FROM TOP again */
+  92% {
+    transform: translateY(5%);
+  }
+
+  /* settles into place */
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-wordSlider {
+  animation: wordSlider 4s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+  will-change: transform;
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-inter);
+  @apply text-white;
+}
