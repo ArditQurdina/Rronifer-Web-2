@@ -27,13 +27,13 @@ export default function JobOpportunities() {
 
                     <div className="flex flex-col lg:flex-row gap-20">
 
-                        <div className="lg:w-[40%] bg-[#F9F9F9] text-black px-12 py-12 h-fit">
+                        <div className="lg:w-[40%] !text-white text-black px-12 py-12 h-fit">
 
                             <h1 className="text-2xl md:text-4xl font-extrabold uppercase">
                                 {t("career.buildYourFutureTitle")}
                             </h1>
 
-                            <p className="mt-6 text-[#4B5563] leading-relaxed text-sm md:text-base">
+                            <p className="mt-6 leading-relaxed text-sm md:text-base">
                                 {t("career.description")}
                             </p>
 
@@ -45,7 +45,7 @@ export default function JobOpportunities() {
 
                                 <div className="flex gap-4">
                                     <span className="text-[#F97316] font-bold text-xl">/</span>
-                                    <p className="text-[#4B5563]">
+                                    <p>
                                         <span className="font-bold">{t("career.innovation.title")}:</span>{" "}
                                         {t("career.innovation.text")}
                                     </p>
@@ -53,7 +53,7 @@ export default function JobOpportunities() {
 
                                 <div className="flex gap-4">
                                     <span className="text-[#F97316] font-bold text-xl">/</span>
-                                    <p className="text-[#4B5563]">
+                                    <p>
                                         <span className="font-bold">{t("career.growth.title")}:</span>{" "}
                                         {t("career.growth.text")}
                                     </p>
@@ -61,7 +61,7 @@ export default function JobOpportunities() {
 
                                 <div className="flex gap-4">
                                     <span className="text-[#F97316] font-bold text-xl">/</span>
-                                    <p className="text-[#4B5563]">
+                                    <p>
                                         <span className="font-bold">{t("career.culture.title")}:</span>{" "}
                                         {t("career.culture.text")}
                                     </p>
@@ -69,7 +69,7 @@ export default function JobOpportunities() {
 
                                 <div className="flex gap-4">
                                     <span className="text-[#F97316] font-bold text-xl">/</span>
-                                    <p className="text-[#4B5563]">
+                                    <p>
                                         <span className="font-bold">{t("career.safety.title")}:</span>{" "}
                                         {t("career.safety.text")}
                                     </p>
