@@ -28,14 +28,17 @@ export default function RelatedStructuralSolutions() {
                                 {t('products.relatedSolutions.cards.cuttingBending.title')}
                             </h1>
 
-                            <div className="flex items-center text-[#9CA3AF] hover:text-white">
+                            <div className="flex items-center text-[#9CA3AF]">
                                 <Link
                                     href="/products/cutting-bending#cutting-bending"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
+                                    className="flex items-center text-[#9CA3AF] transition-colors duration-300 hover:text-white"
                                 >
-                                    {t('products.relatedSolutions.cards.cuttingBending.link')}
+                                    <span className="text-[11px] tracking-[0.2em] font-semibold">
+                                        {t('products.relatedSolutions.cards.cuttingBending.link')}
+                                    </span>
+
+                                    <ChevronRight className="ml-1 size-4" />
                                 </Link>
-                                <ChevronRight className="ml-1 size-4" />
                             </div>
                         </div>
 
@@ -49,14 +52,17 @@ export default function RelatedStructuralSolutions() {
                                 {t('products.relatedSolutions.cards.mediumCarbon.title')}
                             </h1>
 
-                            <div className="flex items-center text-[#9CA3AF] hover:text-white">
+                            <div className="flex items-center text-[#9CA3AF]">
                                 <Link
                                     href="/products/medium-carbon"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
+                                    className="flex items-center text-[#9CA3AF] transition-colors duration-300 hover:text-white"
                                 >
-                                    {t('products.relatedSolutions.cards.mediumCarbon.link')}
+                                    <span className="text-[11px] tracking-[0.2em] font-semibold">
+                                        {t('products.relatedSolutions.cards.mediumCarbon.link')}
+                                    </span>
+
+                                    <ChevronRight className="ml-1 size-4" />
                                 </Link>
-                                <ChevronRight className="ml-1 size-4" />
                             </div>
                         </div>
 
@@ -70,14 +76,13 @@ export default function RelatedStructuralSolutions() {
                                 {t('products.relatedSolutions.cards.latticeGirders.title')}
                             </h1>
 
-                            <div className="flex items-center text-[#9CA3AF] hover:text-white">
-                                <Link
-                                    href="/products/cutting-bending#lattice-girders"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
-                                >
-                                    {t('products.relatedSolutions.cards.latticeGirders.link')}
+                            <div className="flex items-center text-[#9CA3AF]">
+                                <Link href="/products/cutting-bending#lattice-girders" className="flex items-center text-[#9CA3AF] transition-colors duration-300 hover:text-white">
+                                    <span className="text-[11px] tracking-[0.2em] font-semibold">        
+                                        {t('products.relatedSolutions.cards.latticeGirders.link')}
+                                    </span>
+                                    <ChevronRight className="ml-1 size-4" />
                                 </Link>
-                                <ChevronRight className="ml-1 size-4" />
                             </div>
                         </div>
 
