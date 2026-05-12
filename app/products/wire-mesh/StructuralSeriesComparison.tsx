@@ -322,7 +322,7 @@ export default function StructuralSeriesComparison() {
                             <a
                                 href="/Wire Mesh.pdf"
                                 download
-                                className="w-full py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-bold flex items-center justify-center hover:bg-[#3F3F46]"
+                                className="w-full py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-bold flex items-center justify-center hover:bg-[#111111]"
                             >
                                 {t('products.downloadDataSheet')}
                             </a>
