@@ -16,8 +16,7 @@ export default function OurGallery() {
                         </div>
 
                         <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">
-                            <h1>{t('media.title1')}</h1>
-                            <h1>{t('media.title2')}</h1>
+                            <h1>{t('media.title')}</h1>
                         </div>
                     </div>
 
