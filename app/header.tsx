@@ -41,7 +41,7 @@ export default function Header() {
                     />
                     </Link>
                     {/* DESKTOP MENU */}
-                    <ul className="hidden md:flex items-center gap-6 uppercase text-[11px] font-semibold tracking-widest">
+                    <ul className="hidden lg:flex items-center gap-6 uppercase text-[11px] font-semibold tracking-widest">
                         <li className={`${isActiveLink("/") ? "underline decoration-[#F97316] underline-offset-8 decoration-2" : "hover:underline decoration-[#F97316] underline-offset-8 decoration-2"}`}>
                             <Link href="/">{t('nav.home')}</Link>
                         </li>
@@ -75,7 +75,7 @@ export default function Header() {
                             <Link href="/career">{t('nav.career')}</Link>
                         </li>
                     </ul>
-                    <div className="hidden md:flex items-center gap-10">
+                    <div className="hidden lg:flex items-center gap-10">
                         <Link
                             href="/contact-us"
                             className={`text-[11px] uppercase tracking-widest ${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-8 decoration-2" : "hover:underline decoration-[#F97316] underline-offset-8 decoration-2"}`}>
@@ -125,7 +125,7 @@ export default function Header() {
 
                     <button
                         onClick={() => setOpen(!open)}
-                        className="md:hidden flex flex-col gap-1"
+                        className="lg:hidden flex flex-col gap-1"
                     >
                         <span className="w-6 h-[2px] bg-white"></span>
                         <span className="w-6 h-[2px] bg-white"></span>
@@ -134,7 +134,7 @@ export default function Header() {
                 </div>
 
                 {open && (
-                    <div className="md:w-auto w-full md:hidden absolute top-full right-0 bg-black border-t z-80 border-[#2A2A2E]">
+                    <div className="lg:w-auto w-full lg:hidden absolute top-full right-0 bg-black border-t z-80 border-[#2A2A2E]">
                         <ul className="flex flex-col gap-6 p-6 uppercase text-[11px] font-semibold tracking-widest">
                             <li>
                                 <Link href="/" className={isActiveLink("/") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.home')}</Link>
