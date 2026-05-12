@@ -36,7 +36,7 @@ export default function TechnicalSubmission() {
 
                     <Link
                         href="/contact-us#hear-from-you"
-                        className="px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-extrabold flex items-center justify-center hover:bg-[#3F3F46]"
+                        className="px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-extrabold flex items-center justify-center hover:bg-[#111111]"
                     >
                         {t("products.technical.button2")}
                     </Link>

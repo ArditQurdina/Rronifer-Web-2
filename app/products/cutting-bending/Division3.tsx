@@ -69,7 +69,7 @@ export default function Division3() {
 
                         <Link
                             href="/contact-us#hear-from-you"
-                            className="w-fit px-6 md:px-9 py-3 md:py-4 bg-[#121213] text-white uppercase tracking-[0.2em] text-xs font-bold flex items-center justify-center bg-[#3F3F46]"
+                            className="w-fit px-6 md:px-9 py-3 md:py-4 bg-[#121213] text-white uppercase tracking-[0.2em] text-xs font-bold flex items-center justify-center hover:bg-[#111111]"
                         >
                             {t("products.division3.button")}
                         </Link>
