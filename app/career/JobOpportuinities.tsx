@@ -28,12 +28,13 @@ export default function JobOpportunities() {
                     <div className="flex flex-col lg:flex-row gap-20">
 
                         <div className="lg:w-[40%] !text-white text-black px-12 py-12 h-fit">
-
-                            <h1 className="text-2xl md:text-4xl font-extrabold uppercase">
-                                {t("career.buildYourFutureTitle")}
-                            </h1>
-
-                            <p className="mt-6 leading-relaxed text-sm md:text-base">
+                            <div className="flex flex-col gap-6">
+                                <h1 className="text-2xl md:text-4xl font-extrabold uppercase">
+                                    {t("career.buildYourFutureTitle")}
+                                </h1>
+                                <div className="border border-w-full border-[#E5E5E5]"></div>
+                            </div>
+                            <p className="mt-10 leading-relaxed text-sm md:text-base">
                                 {t("career.description")}
                             </p>
 
