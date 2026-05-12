@@ -134,7 +134,7 @@ export default function Header() {
                 </div>
 
                 {open && (
-                    <div className="md:hidden absolute top-full right-0 bg-black border-t z-80 border-[#2A2A2E]">
+                    <div className="md:w-auto w-full md:hidden absolute top-full right-0 bg-black border-t z-80 border-[#2A2A2E]">
                         <ul className="flex flex-col gap-6 p-6 uppercase text-[11px] font-semibold tracking-widest">
                             <li>
                                 <Link href="/" className={isActiveLink("/") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.home')}</Link>
@@ -167,7 +167,7 @@ export default function Header() {
                                 <Link href="/career" className={isActiveLink("/career") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.career')}</Link>
                             </li>
                             <li>
-                                <Link href="/contact-us" className={`${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : "text-[#F97316]"}`}>{t('nav.getInTouch')}</Link>
+                                <Link href="/contact-us" className={`${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : "text-white"}`}>{t('nav.getInTouch')}</Link>
                             </li>
                             {/* Mobile Language Toggle */}
                             <li className="flex gap-3 pt-2 border-t border-[#27272A]">
