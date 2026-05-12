@@ -315,14 +315,14 @@ export default function StructuralSeriesComparison() {
                         {/* BUTTONS */}
                         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
 
-                            <Link href="/contact-us#hear-from-you" className="w-full py-3 md:py-4 md:px-6 px-4 bg-[#F97316] uppercase tracking-widest text-xs font-bold flex items-center justify-center">
+                            <Link href="/contact-us#hear-from-you" className="w-full py-3 md:py-4 md:px-6 px-4 bg-[#F97316] uppercase tracking-widest text-xs font-bold flex items-center justify-center hover:bg-orange-500">
                                 {t('products.requestFullMeshPriceList')}
                             </Link>
 
                             <a
                                 href="/Wire Mesh.pdf"
                                 download
-                                className="w-full py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-bold flex items-center justify-center"
+                                className="w-full py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-bold flex items-center justify-center hover:bg-[#3F3F46]"
                             >
                                 {t('products.downloadDataSheet')}
                             </a>
