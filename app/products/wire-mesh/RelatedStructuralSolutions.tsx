@@ -28,14 +28,14 @@ export default function RelatedStructuralSolutions() {
                                 {t('products.relatedSolutions.cards.cuttingBending.title')}
                             </h1>
 
-                            <div className="flex items-center text-[#9CA3AF]">
+                            <div className="flex items-center text-[#9CA3AF] hover:text-white">
                                 <Link
                                     href="/products/cutting-bending#cutting-bending"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold hover:text-white"
+                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
                                 >
                                     {t('products.relatedSolutions.cards.cuttingBending.link')}
                                 </Link>
-                                <ChevronRight className="ml-1 size-4 hover:text-white" />
+                                <ChevronRight className="ml-1 size-4" />
                             </div>
                         </div>
 
@@ -49,14 +49,14 @@ export default function RelatedStructuralSolutions() {
                                 {t('products.relatedSolutions.cards.mediumCarbon.title')}
                             </h1>
 
-                            <div className="flex items-center text-[#9CA3AF]">
+                            <div className="flex items-center text-[#9CA3AF] hover:text-white">
                                 <Link
                                     href="/products/medium-carbon"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold hover:text-white"
+                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
                                 >
                                     {t('products.relatedSolutions.cards.mediumCarbon.link')}
                                 </Link>
-                                <ChevronRight className="ml-1 size-4 hover:text-white" />
+                                <ChevronRight className="ml-1 size-4" />
                             </div>
                         </div>
 
@@ -70,14 +70,14 @@ export default function RelatedStructuralSolutions() {
                                 {t('products.relatedSolutions.cards.latticeGirders.title')}
                             </h1>
 
-                            <div className="flex items-center text-[#9CA3AF]">
+                            <div className="flex items-center text-[#9CA3AF] hover:text-white">
                                 <Link
                                     href="/products/cutting-bending#lattice-girders"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold hover:text-white"
+                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
                                 >
                                     {t('products.relatedSolutions.cards.latticeGirders.link')}
                                 </Link>
-                                <ChevronRight className="ml-1 size-4 hover:text-white" />
+                                <ChevronRight className="ml-1 size-4" />
                             </div>
                         </div>
 
