@@ -31,11 +31,11 @@ export default function RelatedStructuralSolutions() {
                             <div className="flex items-center text-[#9CA3AF]">
                                 <Link
                                     href="/products/cutting-bending#cutting-bending"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
+                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold hover:text-white"
                                 >
                                     {t('products.relatedSolutions.cards.cuttingBending.link')}
                                 </Link>
-                                <ChevronRight className="ml-1 size-4" />
+                                <ChevronRight className="ml-1 size-4 hover:text-white" />
                             </div>
                         </div>
 
@@ -52,11 +52,11 @@ export default function RelatedStructuralSolutions() {
                             <div className="flex items-center text-[#9CA3AF]">
                                 <Link
                                     href="/products/medium-carbon"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
+                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold hover:text-white"
                                 >
                                     {t('products.relatedSolutions.cards.mediumCarbon.link')}
                                 </Link>
-                                <ChevronRight className="ml-1 size-4" />
+                                <ChevronRight className="ml-1 size-4 hover:text-white" />
                             </div>
                         </div>
 
@@ -73,11 +73,11 @@ export default function RelatedStructuralSolutions() {
                             <div className="flex items-center text-[#9CA3AF]">
                                 <Link
                                     href="/products/cutting-bending#lattice-girders"
-                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold"
+                                    className="text-[#9CA3AF] text-[11px] tracking-[0.2em] font-semibold hover:text-white"
                                 >
                                     {t('products.relatedSolutions.cards.latticeGirders.link')}
                                 </Link>
-                                <ChevronRight className="ml-1 size-4" />
+                                <ChevronRight className="ml-1 size-4 hover:text-white" />
                             </div>
                         </div>
 
