@@ -49,7 +49,7 @@ export default function IndustrySpecialization() {
 
                                 <Link
                                     href="/products/wire-mesh"
-                                    className="mt-6 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center"
+                                    className="mt-6 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center transition-colors duration-300 hover:bg-[#111111]"
                                 >
                                     {t('home.moreInfo')}
                                 </Link>
@@ -82,11 +82,10 @@ export default function IndustrySpecialization() {
 
                                 <Link
                                     href="/products/cutting-bending"
-                                    className="mt-6 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center"
+                                    className="mt-6 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center transition-colors duration-300 hover:bg-[#111111]"
                                 >
                                     {t('home.moreInfo')}
-                                </Link>
-
+                                </Link>                            
                             </div>
                         </div>
 
@@ -115,14 +114,14 @@ export default function IndustrySpecialization() {
 
                                 <Link
                                     href="/products/medium-carbon"
-                                    className="mt-6 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center"
+                                    className="mt-6 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center transition-colors duration-300 hover:bg-[#111111]"
                                 >
                                     {t('home.moreInfo')}
                                 </Link>
 
                             </div>
                         </div>
-                    </div>                
+                    </div>
                 </div>
             </div>
         </div>
