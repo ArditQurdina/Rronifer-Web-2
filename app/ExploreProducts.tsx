@@ -78,18 +78,17 @@ export default function ExploreProducts() {
 
                             <Link
                                 href="/products"
-                                className="px-6 md:px-9 py-3 md:py-4 bg-[#F97316] text-black uppercase tracking-widest text-xs font-extrabold flex items-center justify-center"
+                                className="px-6 md:px-9 py-3 md:py-4 bg-[#F97316] text-black uppercase tracking-widest text-xs font-extrabold flex items-center justify-center transition-colors duration-300 hover:bg-orange-500"
                             >
                                 {t("home.exploreProducts")}
                             </Link>
 
                             <Link
                                 href="/contact-us"
-                                className="px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-extrabold flex items-center justify-center"
+                                className="px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase tracking-widest text-xs font-extrabold flex items-center justify-center transition-colors duration-300 hover:bg-[#3F3F46] hover:text-white"
                             >
                                 {t("nav.getInTouch")}
                             </Link>
-
                         </div>
 
                     </div>
