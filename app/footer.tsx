@@ -24,10 +24,8 @@ export default function Footer() {
 
                 <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs text-[#71717A] uppercase tracking-wide font-bold">
                     <Link href="/career" className="cursor-pointer hover:text-white transition">{t('footer.career')}</Link>
-                    <Link href="/" className="cursor-pointer hover:text-white transition">{t('footer.privacy')}</Link>
                     <Link href="/products#certificates" className="cursor-pointer hover:text-white transition">{t('footer.certifications')}</Link>
                 </div>
-
             </div>
         </div>
     );

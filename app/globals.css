@@ -38,7 +38,7 @@
   overflow: hidden;
   opacity: 0;
   transform: translateY(10px);
-  animation: elegantFadeIn 1.3s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.2s;
+  animation: elegantFadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.2s;
 }
 
 .main-logo {
@@ -77,7 +77,7 @@
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
   margin-top: 25px;
   opacity: 0;
-  animation: lineExpand 2s ease-out forwards 2s;
+  animation: lineExpand 2s ease-out forwards 1.5s;
 }
 
 /* =========================
@@ -92,7 +92,7 @@
   letter-spacing: 1.5rem;
   text-indent: 1.5rem;
   opacity: 0;
-  animation: textBreath 3s ease-out forwards 2s;
+  animation: textBreath 4s ease-out forwards 3s;
 }
 
 /* =========================
