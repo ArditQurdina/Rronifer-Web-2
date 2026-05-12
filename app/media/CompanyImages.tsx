@@ -189,7 +189,7 @@ export default function CompanyImages() {
 
             {/* LIGHTBOX */}
             {lightboxOpen && (
-                <div className="fixed inset-0 bg-black z-50">
+                <div className="fixed inset-0 bg-black z-999">
 
                     {/* IMAGE */}
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -205,7 +205,7 @@ export default function CompanyImages() {
                     </div>
 
                     {/* UI */}
-                    <div className="absolute inset-0 z-50 pointer-events-none">
+                    <div className="absolute inset-0 z-999 pointer-events-none">
 
                         {/* TOP */}
                         <div className="absolute top-4 right-4 flex gap-2 pointer-events-auto">
@@ -261,7 +261,7 @@ export default function CompanyImages() {
                     </div>
 
                     {/* BOTTOM */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-50 text-white text-sm bg-black bg-opacity-50 px-3 py-1 rounded-full">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-999 text-white text-sm bg-black bg-opacity-50 px-3 py-1 rounded-full">
                         {currentImageIndex + 1} / {images.length}
                     </div>
                 </div>
