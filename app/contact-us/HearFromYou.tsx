@@ -67,7 +67,7 @@ export default function HearFromYou() {
                                     </div>
                                 </div>
                                 <button type="submit"
-                                    className="bg-[#F97316] tracking-wide cursor-pointer w-fit mt-8 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase text-sm font-extrabold flex items-center justify-center"
+                                    className="bg-[#F97316] tracking-wide cursor-pointer w-fit mt-8 px-6 md:px-9 py-3 md:py-4 border border-[#3F3F46] text-white uppercase text-xs font-extrabold flex items-center justify-center hover:bg-orange-500"
                                 >
                                     {t('career.sendDispatch')}
                                     <MoveRight className="ml-3 size-5" />
