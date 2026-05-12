@@ -21,7 +21,7 @@ export default function IntroProvider({
         setShowIntro(false);
         sessionStorage.setItem("introShown", "true");
         setLoading(false);
-      }, 2200);
+      }, 2500);
 
       return () => clearTimeout(timer);
     }
