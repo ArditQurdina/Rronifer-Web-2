@@ -80,7 +80,7 @@ export default function Devices() {
 
                                 <Link
                                     href={item.link}
-                                    className="mt-6 px-6 py-3 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center"
+                                    className="mt-6 px-6 py-3 border border-[#3F3F46] text-white uppercase tracking-[0.2em] text-xs font-extrabold flex items-center justify-center transition-colors hover:bg-[#111111]"
                                 >
                                     {t('home.moreInfo')}
                                 </Link>
