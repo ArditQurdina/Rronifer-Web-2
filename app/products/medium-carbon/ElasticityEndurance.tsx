@@ -10,7 +10,7 @@ export default function ElasticityEndurance() {
         <div className="bg-black flex items-center justify-center py-16 md:py-20 lg:py-26 px-6 sm:px-10 md:px-20 w-full border border-t-0 border-[#2A2A2E]">
             <div className="max-w-[1500px] w-full mx-auto">
 
-                <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-40 gap-20 w-full">
+                <div className="flex flex-col lg:flex-row lg:gap-40 gap-20 w-full">
 
                     {/* LEFT */}
                     <div className="flex flex-col gap-6 w-full lg:w-[55%]">
