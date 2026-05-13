@@ -13,7 +13,7 @@ export default function Devices() {
 
                     {[
                         {
-                            img: "Wire Meshes.svg",
+                            img: "Wire Meshes.png",
                             title: t('products.wireMeshTitle'),
                             desc: t('products.wireMeshDesc'),
                             specs: [
@@ -23,7 +23,7 @@ export default function Devices() {
                             link: "/products/wire-mesh",
                         },
                         {
-                            img: "Rebar Bending.svg",
+                            img: "Rebar Bending.png",
                             title: t('products.rebarBendingTitle'),
                             desc: t('products.rebarBendingDesc'),
                             specs: [
@@ -33,7 +33,7 @@ export default function Devices() {
                             link: "/products/cutting-bending",
                         },
                         {
-                            img: "Carbon Steel.svg",
+                            img: "Carbon Steel.png",
                             title: t('products.carbonSteelTitle'),
                             desc: t('products.carbonSteelDesc'),
                             specs: [

@@ -34,7 +34,7 @@ export default function IndustrialVertical() {
                     {/* RIGHT */}
                     <div className="w-full flex items-center justify-center">
                         <Image
-                            src="/industrial vertical.svg"
+                            src="/industrial vertical.png"
                             alt="Industrial Vertical"
                             width={800}
                             height={800}
