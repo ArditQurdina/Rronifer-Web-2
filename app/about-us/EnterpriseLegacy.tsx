@@ -53,7 +53,7 @@ export default function EnterpriseLegacy() {
                     {/* RIGHT */}
                     <div className="flex items-center justify-center w-full">
                         <Image
-                            src="/rronifer-object.svg"
+                            src="/image1.webp"
                             alt="Rronifer Object"
                             width={700}
                             height={700}
