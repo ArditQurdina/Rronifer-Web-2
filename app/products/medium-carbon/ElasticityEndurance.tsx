@@ -50,8 +50,8 @@ export default function ElasticityEndurance() {
                         <Image
                             src="/second-image.png"
                             alt="Spring Steel"
-                            width={0}
-                            height={0}
+                            width={800}
+                            height={600}
                             className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
 
