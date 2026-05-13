@@ -20,9 +20,17 @@ export default function StructuralSeriesComparison() {
                             <Image
                                 src="/Wiremesh.png"
                                 alt="Wiremesh"
-                                width={0}
-                                height={0}
-                                className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
+                                width={700}
+                                height={500}
+                                className="
+        w-full
+        h-auto
+        object-contain
+        animate-fadeInUp
+        transition-all
+        duration-700
+        hover:scale-105
+    "
                             />
                         </div>
 
@@ -53,10 +61,18 @@ export default function StructuralSeriesComparison() {
                         <Image
                             src="/Wire Mesh.png"
                             alt="Wiremesh"
-                            width={0}
-                            height={0}
-                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
-                        />
+                            width={700}
+                            height={500}
+                            className="
+        w-full
+        h-auto
+        object-contain
+        animate-fadeInUp
+        transition-all
+        duration-700
+        hover:scale-105
+    "
+                        />                    
                     </div>
 
                     {/* RIGHT */}

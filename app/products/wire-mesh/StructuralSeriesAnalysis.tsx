@@ -16,10 +16,10 @@ export default function StructuralSeriesAnalysis() {
                             <Image
                                 src="/Reinforcement Mesh.png"
                                 alt="Wire Mesh"
-                                width={0}
-                                height={0}
+                                width={700}
+                                height={500}
                                 className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
-                            />
+                            />                        
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
                             <div
