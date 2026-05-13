@@ -178,7 +178,7 @@ export default function CompanyImages() {
                                     src={`/image${num}.webp`}
                                     alt={`Company Image ${num}`}
                                     fill
-                                    className="object-cover rounded-3xl"
+                                    className="object-cover rounded-3xl opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                                 />
                             </div>
                         ))}
@@ -197,7 +197,7 @@ export default function CompanyImages() {
                             alt="image"
                             width={1200}
                             height={800}
-                            className={`object-contain transition-transform duration-500 ${isZoomed ? "scale-150 cursor-zoom-out" : "scale-100 cursor-zoom-in"
+                            className={`object-contain transition-transform duration-500 opacity-0 animate-fadeInUp hover:scale-105 ${isZoomed ? "scale-150 cursor-zoom-out" : "scale-100 cursor-zoom-in"
                                 }`}
                             onClick={toggleZoom}
                         />

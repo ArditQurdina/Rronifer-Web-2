@@ -59,7 +59,7 @@ export default function QualifiedEngineers() {
                             alt="Engineers"
                             width={120}
                             height={60}
-                            className="w-auto h-auto"
+                            className="w-auto h-auto opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                         <div className="text-[10px] text-[#71717A] font-semibold">
                             {t('about.qualifiedEng')}
@@ -90,7 +90,7 @@ export default function QualifiedEngineers() {
                                         alt={p[0]}
                                         width={500}
                                         height={500}
-                                        className="w-full lg:h-[500px] h-auto object-cover mx-auto"
+                                        className="w-full lg:h-[500px] h-auto object-cover mx-auto opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                                     />
 
                                     <EngineersCard

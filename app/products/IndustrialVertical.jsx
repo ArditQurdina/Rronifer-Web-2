@@ -38,7 +38,7 @@ export default function IndustrialVertical() {
                             alt="Industrial Vertical"
                             width={800}
                             height={800}
-                            className="w-full h-auto object-contain"
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                     </div>
                 </div>

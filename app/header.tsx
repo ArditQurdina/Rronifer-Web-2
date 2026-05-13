@@ -38,6 +38,7 @@ export default function Header() {
                         alt="Rronifer logo"
                         width={180}
                         height={50}
+                        className="opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                     />
                     </Link>
                     {/* DESKTOP MENU */}

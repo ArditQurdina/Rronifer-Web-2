@@ -32,7 +32,7 @@ export default function IndustrySpecialization() {
                                 alt={t('home.wiremeshes')}
                                 width={0}
                                 height={0}
-                                className="w-full h-[280px] object-cover"
+                                className="w-full h-[280px] object-cover opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                             />
 
                             <div className="flex flex-col flex-1">
@@ -65,7 +65,7 @@ export default function IndustrySpecialization() {
                                 alt={t('home.cuttingBending')}
                                 width={0}
                                 height={0}
-                                className="w-full h-[280px] object-cover"
+                                className="w-full h-[280px] object-cover opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                             />
 
                             <div className="flex flex-col flex-1">
@@ -97,7 +97,7 @@ export default function IndustrySpecialization() {
                                 alt={t('home.mediumCarbon')}
                                 width={0}
                                 height={0}
-                                className="w-full h-[280px] object-cover"
+                                className="w-full h-[280px] object-cover opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                             />
 
                             <div className="flex flex-col flex-1">

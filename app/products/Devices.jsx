@@ -50,7 +50,7 @@ export default function Devices() {
                                 alt={item.title}
                                 width={600}
                                 height={400}
-                                className="w-full h-auto object-contain"
+                                className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                             />
 
                             <div className="flex flex-col flex-1">

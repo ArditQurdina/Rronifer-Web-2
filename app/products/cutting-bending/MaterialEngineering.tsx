@@ -82,7 +82,7 @@ export default function MaterialEngineering() {
                             width={0}
                             height={0}
                             sizes="100vw"
-                            className="w-full h-auto object-contain"
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
 
                         <div className="flex items-center justify-between gap-8 bg-[#121213] uppercase w-full text-xs tracking-[0.2em] p-6">

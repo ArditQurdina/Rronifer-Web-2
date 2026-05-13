@@ -49,7 +49,7 @@ export default function Division4() {
                             width={0}
                             height={0}
                             sizes="100vw"
-                            className="w-full h-auto object-contain"
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                     </div>
 

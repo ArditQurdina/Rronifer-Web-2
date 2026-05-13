@@ -18,7 +18,7 @@ export default function StructuralSeriesAnalysis() {
                                 alt="Wire Mesh"
                                 width={0}
                                 height={0}
-                                className="w-full h-auto object-contain"
+                                className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                             />
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">

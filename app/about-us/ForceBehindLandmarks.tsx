@@ -18,7 +18,7 @@ export default function ForceBehindLandmarks() {
                             width={0}
                             height={0}
                             sizes="100vw"
-                            className="w-auto h-auto"
+                            className="w-auto h-auto opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                     </div>
                     {/* RIGHT SIDE */}

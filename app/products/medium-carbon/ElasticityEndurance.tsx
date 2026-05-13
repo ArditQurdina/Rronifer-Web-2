@@ -52,7 +52,7 @@ export default function ElasticityEndurance() {
                             alt="Spring Steel"
                             width={0}
                             height={0}
-                            className="w-full h-auto object-contain"
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
 
                         <div className="absolute lg:-bottom-10 lg:-left-40 md:-bottom-10 md:-left-10 -bottom-3 -left-3 flex flex-col gap-4 2xl:gap-4 xl:gap-3 lg:gap-2 2xl:w-[300px] xl:w-[250px] uppercase">

@@ -18,7 +18,7 @@ export default function AdvancedMetalFabrication() {
                             alt="IMP"
                             width={700}
                             height={700}
-                            className="w-full h-auto object-contain"
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                     </div>
 

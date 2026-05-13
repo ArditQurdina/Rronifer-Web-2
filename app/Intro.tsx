@@ -18,7 +18,7 @@ export default function Intro() {
                         alt="Ronifer Group"
                         width={700}
                         height={300}
-                        className="main-logo"
+                        className="main-logo opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         priority
                     />
                 </div>
