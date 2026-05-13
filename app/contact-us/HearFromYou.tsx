@@ -78,14 +78,10 @@ export default function HearFromYou() {
                             <div className="shrink-0">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d55258.25891380723!2d20.440163!3d42.382864!3m2!1i1024!2i768!4f13.1!2m1!1sRroni%20Fer%20LLC!5e1!3m2!1sen!2sus!4v1778052881802!5m2!1sen!2sus"
-                                    width={0}
-                                    height={0}
-                                    style={{ border: 0 }}
                                     allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
-                                    className="xl:w-[650px] xl:h-[400px] w-full h-[300px] rounded-lg"
-                                ></iframe>
+                                    className="xl:w-[650px] xl:h-[400px] w-full h-[300px] rounded-lg animate-fadeInUp transition-transform duration-700 hover:scale-105"                                ></iframe>
                             </div>
                             <div className="flex items-center gap-24">
                                 <div className="text-xs font-semibold tracking-widest">
