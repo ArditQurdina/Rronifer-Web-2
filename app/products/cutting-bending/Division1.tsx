@@ -65,10 +65,10 @@ export default function Division1() {
                     {/* RIGHT */}
                     <div className="flex flex-col gap-8 lg:w-[60%]">
                         <Image
-                            src="/Bending Process.svg"
+                            src="/Bending Process.png"
                             alt="Bending Process"
-                            width={0}
-                            height={0}
+                            width={800}
+                            height={600}
                             className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                     </div>

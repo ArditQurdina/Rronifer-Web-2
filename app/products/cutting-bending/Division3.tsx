@@ -16,10 +16,10 @@ export default function Division3() {
                     {/* LEFT */}
                     <div className="flex flex-col gap-8 lg:w-[60%]">
                         <Image
-                            src="/Division3.svg"
+                            src="/Division3.png"
                             alt="Pile Cages"
-                            width={0}
-                            height={0}
+                            width={800}
+                            height={600}
                             className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
                         />
                     </div>
