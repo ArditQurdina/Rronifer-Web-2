@@ -48,7 +48,7 @@ export default function ElasticityEndurance() {
                     <div className="w-full lg:w-[45%] flex items-center justify-center relative">
 
                         <Image
-                            src="/second-image.png"
+                            src="/second-image2.png"
                             alt="Spring Steel"
                             width={800}
                             height={600}
