@@ -14,7 +14,7 @@ export default function AdvancedMetalFabrication() {
                     {/* LEFT */}
                     <div className="flex items-center justify-center">
                         <Image
-                            src="/imp.svg"
+                            src="/imp.png"
                             alt="IMP"
                             width={700}
                             height={700}
