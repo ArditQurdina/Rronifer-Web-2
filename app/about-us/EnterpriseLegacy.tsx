@@ -53,11 +53,11 @@ export default function EnterpriseLegacy() {
                     {/* RIGHT */}
                     <div className="flex items-center justify-center w-full">
                         <Image
-                            src="/image1.webp"
+                            src="/Rronifer Object.png"
                             alt="Rronifer Object"
                             width={700}
                             height={700}
-                            className="w-full h-auto object-contain transition-all duration-500 ease-in-out hover:scale-105"
+                            className="w-full h-auto object-contain transition-all duration-500"
                         />                    
                     </div>
                 </div>
