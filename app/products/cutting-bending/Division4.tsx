@@ -14,6 +14,19 @@ export default function Division4() {
                 <div className="flex flex-col lg:flex-row items-center gap-20">
 
                     {/* LEFT */}
+
+                    <div className="flex flex-col gap-8 lg:w-[60%]">
+                        <Image
+                            src="/Division4.png"
+                            alt="Diaphragm Walls"
+                            width={800}
+                            height={600}
+                            className="w-full h-auto object-contain animate-fadeInUp transition-transform duration-700 hover:scale-105"
+                        />
+                    </div>
+
+                    {/* RIGHT */}
+
                     <div className="flex flex-col justify-center gap-6 lg:w-[40%] border border-[#E5E5E5] px-9 py-10">
 
                         <div className="flex flex-col gap-4">
@@ -41,16 +54,6 @@ export default function Division4() {
 
                     </div>
 
-                    {/* RIGHT */}
-                    <div className="flex flex-col gap-8 lg:w-[60%]">
-                        <Image
-                            src="/Division4.png"
-                            alt="Diaphragm Walls"
-                            width={800}
-                            height={600}
-                            className="w-full h-auto object-contain animate-fadeInUp transition-transform duration-700 hover:scale-105"
-                        />                    
-                    </div>
 
                 </div>
             </div>

@@ -14,17 +14,7 @@ export default function Division3() {
                 <div className="flex flex-col lg:flex-row gap-20">
 
                     {/* LEFT */}
-                    <div className="flex flex-col gap-8 lg:w-[60%]">
-                        <Image
-                            src="/Division3.png"
-                            alt="Pile Cages"
-                            width={800}
-                            height={600}
-                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
-                        />
-                    </div>
 
-                    {/* RIGHT */}
                     <div className="flex flex-col justify-center gap-6 lg:w-[40%]">
 
                         <div className="flex flex-col gap-4">
@@ -75,6 +65,19 @@ export default function Division3() {
                         </Link>
 
                     </div>
+
+                    { /* RIGHT */}
+                    
+                    <div className="flex flex-col gap-8 lg:w-[60%]">
+                        <Image
+                            src="/Division3.png"
+                            alt="Pile Cages"
+                            width={800}
+                            height={600}
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
+                        />
+                    </div>
+
 
                 </div>
             </div>
