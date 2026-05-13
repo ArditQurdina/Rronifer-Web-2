@@ -14,7 +14,7 @@ export default function StructuralSeriesAnalysis() {
                     <div className="flex flex-col gap-8 shrink-0 lg:w-[50%]">
                         <div>
                             <Image
-                                src="/Reinforcement Mesh.svg"
+                                src="/Reinforcement Mesh.png"
                                 alt="Wire Mesh"
                                 width={0}
                                 height={0}

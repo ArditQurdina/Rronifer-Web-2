@@ -18,7 +18,7 @@ export default function StructuralSeriesComparison() {
 
                         <div>
                             <Image
-                                src="/Wiremesh.svg"
+                                src="/Wiremesh.png"
                                 alt="Wiremesh"
                                 width={0}
                                 height={0}
@@ -51,7 +51,7 @@ export default function StructuralSeriesComparison() {
                         </div>
 
                         <Image
-                            src="/Wire Mesh.svg"
+                            src="/Wire Mesh.png"
                             alt="Wiremesh"
                             width={0}
                             height={0}
