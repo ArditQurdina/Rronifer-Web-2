@@ -48,7 +48,7 @@ export default function IndustrialRawMaterials() {
                     <div className="w-full lg:w-[45%] flex items-center justify-center relative">
 
                         <Image
-                            src="/Carbon.svg"
+                            src="/Carbon.png"
                             alt="Carbon Steel Wire"
                             width={0}
                             height={0}
