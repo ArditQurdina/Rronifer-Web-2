@@ -57,9 +57,17 @@ export default function EnterpriseLegacy() {
                             alt="Rronifer Object"
                             width={700}
                             height={700}
-                            className="w-full h-auto object-contain transition-all duration-500"
-                        />                    
-                    </div>
+                            className="
+        w-full
+        h-auto
+        object-contain
+        opacity-0
+        animate-fadeInUp
+        transition-all
+        duration-700
+        hover:scale-105
+    "
+                        />                    </div>
                 </div>
             </div>
         </div>
