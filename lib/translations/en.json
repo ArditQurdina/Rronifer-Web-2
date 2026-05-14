@@ -17,7 +17,8 @@
         "aboutFootprint": "Industrial Footprint",
         "aboutLandmarks": "Landmarks",
         "english": "English",
-        "albanian": "Albanian"
+        "albanian": "Albanian",
+        "german": "German"
     },
     "home": {
         "tagline": "Forging the future",
@@ -29,7 +30,7 @@
         "better": "Better",
         "specializationDesc": "We implement state-of-the-art technologies to provide the most sustainable and high-tensile solutions for the construction and industrial sectors.",
         "wiremeshes": "Wiremeshes",
-        "wireMeshesDesc": "Automated reinforcement solutions for complex architectural foundations.",
+        "wireMeshesDesc": "Our company is a leader in building quality in the country by implementing state-of-the-arttechnologies to provide the most sustainable solutions.",
         "cuttingBending": "Cutting & Bending",
         "cuttingBendingDesc": "Precision cutting and bending services for industrial applications.",
         "mediumCarbon": "Medium Carbon Lattice",
@@ -96,6 +97,7 @@
         "regionalExpansion": "Regional Expansion",
         "mediumCarbonSteel": "Medium Carbon Steel",
         "capacity": "Ton metrik annually",
+        "metricTonsAnnually": "Metric tons annually",
         "integratedTechFacility": "Integrated Tech Facility",
         "engineersDesc": "Industry experts with decades of combined experience",
         "firstEngineerRole": "Genti, the CEO of Rronifer, has been instrumental in driving the company's growth and success. With a profound dedication to innovation, quality, and sustainability, Gent leads Rronifer with a strategic focus on excellence and customer satisfactio.",
@@ -197,7 +199,6 @@
         "structuralExperience": "Structural Experience.",
         "industrialVerticalDesc": "Our management continues to build on decades of experience—constantly increasing performance and implementing state-of-the-art technologies to provide the most sustainable solutions in the market.",
         "features": "Product Features",
-        "panelsPerUnit": "Panels / Unit",
         "applications": "Applications",
         "getInfo": "Get in Touch",
         "cuttingBandingTitle": "Cutting Bending Products",
@@ -244,6 +245,7 @@
         "rSeries25cmSpacing": "R-Series (25cm Spacing)",
         "qSeriesDenseGrid": "Q-Series (Dense Grid)",
         "dimensions": "Dimensions",
+        "panelsPerUnit": "Panels / Unit",
         "fixed": "Fixed",
         "requestFullBoqQuote": "Request Full Boq Quote",
         "downloadTechnicalPDF": "Download Technical PDF",

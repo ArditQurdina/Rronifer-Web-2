@@ -33,13 +33,12 @@ export default function Header() {
 
                     {/* LOGO */}
                     <Link href="/">
-                    <Image
-                        src="/rronifer-logo.svg"
-                        alt="Rronifer logo"
-                        width={180}
-                        height={50}
-                        className="opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
-                    />
+                        <Image
+                            src="/rronifer-logo.svg"
+                            alt="Rronifer logo"
+                            width={180}
+                            height={50}
+                        />
                     </Link>
                     {/* DESKTOP MENU */}
                     <ul className="hidden lg:flex items-center gap-6 uppercase text-[11px] font-semibold tracking-widest">
@@ -57,10 +56,9 @@ export default function Header() {
                                 {t('nav.products')}
                                 <ChevronDown size={16} />
                             </button>
-                            <div className="absolute top-full left-0 bg-black border border-t-0 border-[#2A2A2E] rounded mt-2 w-40 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                                <Link href="/products/wire-mesh" className={`block px-4 py-2 hover:bg-[#27272A] text-[11px] border-b border-[#2A2A2E] ${isActiveLink("/products/wire-mesh") ? "text-[#F97316] font-bold" : ""}`}>
-                                    {t('nav.wireMesh')}
-                                </Link>
+                            <div className="absolute top-full left-0 bg-black border border-t-0 border-[#2A2A2E] rounded mt-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 inline-block whitespace-nowrap">                                <Link href="/products/wire-mesh" className={`block px-4 py-2 hover:bg-[#27272A] text-[11px] border-b border-[#2A2A2E] ${isActiveLink("/products/wire-mesh") ? "text-[#F97316] font-bold" : ""}`}>
+                                {t('nav.wireMesh')}
+                            </Link>
                                 <Link href="/products/cutting-bending" className={`block px-4 py-2 hover:bg-[#27272A] text-[11px] border-b border-[#2A2A2E] ${isActiveLink("/products/cutting-bending") ? "text-[#F97316] font-bold" : ""}`}>
                                     {t('nav.cuttingBanding')}
                                 </Link>
@@ -121,6 +119,26 @@ export default function Header() {
                                     }}
                                 />
                             </button>
+
+                            <button
+                                onClick={() => setLanguage("ge")}
+                                className={`transition-opacity hover:opacity-80 cursor-pointer ${language === "ge"
+                                    ? "opacity-100 underline decoration-[#F97316] underline-offset-8 decoration-2"
+                                    : "opacity-60"
+                                    }`}
+                                aria-label="German"
+                            >
+                                <ReactCountryFlag
+                                    countryCode="DE"
+                                    title={t("nav.german")}
+                                    svg
+                                    style={{
+                                        width: "18px",
+                                        height: "18px",
+                                    }}
+                                />
+                            </button>
+
                         </div>
                     </div>
 
@@ -149,13 +167,13 @@ export default function Header() {
                                 <details className="cursor-pointer">
                                     <summary className={`flex items-center gap-2 cursor-pointer ${isActiveLink("/products") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}`}>{t('nav.products')}</summary>
                                     <div className="pl-4 mt-2 flex flex-col gap-2">
-                                        <Link href="/products/wire-mesh" className={`text-[#F97316] ${isActiveLink("/products/wire-mesh") ? "font-bold" : ""}`}>
+                                        <Link href="/products/wire-mesh" className={`text-[#F97316] word-break ${isActiveLink("/products/wire-mesh") ? "font-bold" : ""}`}>
                                             {t('nav.wireMesh')}
                                         </Link>
-                                        <Link href="/products/cutting-bending" className={`text-[#F97316] ${isActiveLink("/products/cutting-bending") ? "font-bold" : ""}`}>
+                                        <Link href="/products/cutting-bending" className={`text-[#F97316] word-break ${isActiveLink("/products/cutting-bending") ? "font-bold" : ""}`}>
                                             {t('nav.cuttingBanding')}
                                         </Link>
-                                        <Link href="/products/medium-carbon" className={`text-[#F97316] ${isActiveLink("/products/medium-carbon") ? "font-bold" : ""}`}>
+                                        <Link href="/products/medium-carbon" className={`text-[#F97316] word-break ${isActiveLink("/products/medium-carbon") ? "font-bold" : ""}`}>
                                             {t('nav.mediumCarbon')}
                                         </Link>
                                     </div>
