@@ -2,17 +2,21 @@
 
 import Image from "next/image";
 import FileInput from "./FileInput";
+import { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function JobOpportunities() {
     const { t } = useLanguage();
 
+    const [startDate, setStartDate] = useState<Date | null>(null);
     return (
         <div className="bg-black flex items-center justify-center py-16 md:py-20 lg:py-26 px-6 sm:px-10 md:px-20 w-full border border-t-0 border-[#2A2A2E]">
 
             <div className="max-w-[1500px] w-full mx-auto">
 
-                <div className="flex flex-col lg:gap-40 gap-20">
+                <div className="flex flex-col gap-20">
 
                     <div className="flex flex-col gap-4 uppercase">
                         <div className="text-[#F97316] tracking-[0.3em] text-xs">
@@ -27,7 +31,7 @@ export default function JobOpportunities() {
 
                     <div className="flex flex-col lg:flex-row gap-20">
 
-                        <div className="lg:w-[40%] !text-white text-black h-fit">
+                        <div className="lg:w-[40%] !text-white text-black px-12 py-12 h-fit">
                             <div className="flex flex-col gap-6">
                                 <h1 className="text-2xl md:text-4xl font-extrabold uppercase">
                                     {t("career.buildYourFutureTitle")}
@@ -142,15 +146,19 @@ export default function JobOpportunities() {
 
                                     {/* BIRTHDAY */}
                                     <div className="flex flex-col gap-1">
-                                        <label className="pl-1 uppercase text-[11px] tracking-[0.1em]" htmlFor="birthdayDate">
-                                            {t('career.birthday')}
+                                        <label
+                                            className="pl-1 uppercase text-[11px] tracking-[0.1em]"
+                                            htmlFor="birthdayDate"
+                                        >
+                                            Birthday
                                         </label>
-                                        <input
-                                            type="date"
-                                            id="birthdayDate"
-                                            name="birthdayDate"
-                                            required
-                                            className="bg-[#18181B] rounded-lg border border-[#3F3F46] py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-gray-400"
+
+                                        <DatePicker
+                                            selected={startDate}
+                                            onChange={(date: Date | null) => setStartDate(date)} 
+                                            dateFormat="dd.MM.yyyy"
+                                            placeholderText="dd.mm.yyyy"
+                                            className="bg-[#18181B] rounded-lg border border-[#3F3F46] py-3 px-4 text-white placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-gray-400 w-full"
                                         />
                                     </div>
 
