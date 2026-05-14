@@ -195,7 +195,15 @@ export default function Header() {
                                     className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'al' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
                                         }`}
                                 >
-                                    AL
+                                    <ReactCountryFlag
+                                        countryCode="AL"
+                                        svg
+                                        title={t("nav.albanian")}
+                                        style={{
+                                            width: "20px",
+                                            height: "20px",
+                                        }}
+                                    />
                                 </button>
                                 <span className="text-white">|</span>
 
@@ -204,7 +212,15 @@ export default function Header() {
                                     className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'en' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
                                         }`}
                                 >
-                                    EN
+                                    <ReactCountryFlag
+                                        countryCode="GB"
+                                        svg
+                                        title={t("nav.english")}
+                                        style={{
+                                            width: "20px",
+                                            height: "20px",
+                                        }}
+                                    />
                                 </button>
                                 <span className="text-white">|</span>
                                 <button
@@ -212,7 +228,15 @@ export default function Header() {
                                     className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'ge' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
                                         }`}
                                 >
-                                    GE
+                                    <ReactCountryFlag
+                                        countryCode="DE"
+                                        svg
+                                        title={t("nav.german")}
+                                        style={{
+                                            width: "20px",
+                                            height: "20px",
+                                        }}
+                                    />
                                 </button>
                             </li>
                         </ul>
