@@ -25,9 +25,9 @@ export default function JobOpportunities() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-20">
+                    <div className="flex flex-col lg:flex-row lg:gap-40 gap-20">
 
-                        <div className="lg:w-[40%] !text-white text-black px-12 py-12 h-fit">
+                        <div className="lg:w-[40%] !text-white text-black h-fit">
                             <div className="flex flex-col gap-6">
                                 <h1 className="text-2xl md:text-4xl font-extrabold uppercase">
                                     {t("career.buildYourFutureTitle")}
