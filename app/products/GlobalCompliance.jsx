@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import Image from "next/image";
 
 export default function GlobalCompliance() {
     const { t } = useLanguage();
@@ -140,15 +141,18 @@ export default function GlobalCompliance() {
                     {/* IMAGE */}
                     <div
                         className={`transition-all duration-300 ease-out transform
-                        ${isVisible ? "scale-100" : "scale-90"}`}
+    ${isVisible ? "scale-100" : "scale-90"}`}
                     >
-                        <img
-                            src={`/certificates/${certificates[index]}.webp`}
-                            alt="certificate"
-                            className="max-h-[90vh] max-w-[90vw] object-contain"
-                        />
+                        <div className="relative w-[90vw] h-[90vh]">
+                            <Image
+                                src={`/certificates/${certificates[index]}.webp`}
+                                alt="certificate"
+                                fill
+                                className="object-contain"
+                                sizes="90vw"
+                            />
+                        </div>
                     </div>
-
                     {/* CLOSE */}
                     <button
                         onClick={close}
