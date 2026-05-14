@@ -191,6 +191,15 @@ export default function Header() {
                             {/* Mobile Language Toggle */}
                             <li className="flex gap-3 pt-2 border-t border-[#27272A]">
                                 <button
+                                    onClick={() => setLanguage('al')}
+                                    className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'al' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
+                                        }`}
+                                >
+                                    AL
+                                </button>
+                                <span className="text-white">|</span>
+
+                                <button
                                     onClick={() => setLanguage('en')}
                                     className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'en' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
                                         }`}
@@ -199,11 +208,11 @@ export default function Header() {
                                 </button>
                                 <span className="text-white">|</span>
                                 <button
-                                    onClick={() => setLanguage('al')}
-                                    className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'al' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
+                                    onClick={() => setLanguage('ge')}
+                                    className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'ge' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
                                         }`}
                                 >
-                                    AL
+                                    GE
                                 </button>
                             </li>
                         </ul>
