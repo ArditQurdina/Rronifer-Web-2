@@ -160,6 +160,7 @@ export default function JobOpportunities() {
                                             placeholderText="dd.mm.yyyy"
                                             showYearDropdown
                                             showMonthDropdown
+                                            adjustDateOnChange
                                             dropdownMode="select"
                                             className="bg-[#18181B] rounded-lg border border-[#3F3F46] py-3 px-4 text-white placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-gray-400 w-full"
                                         />
