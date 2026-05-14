@@ -42,7 +42,7 @@ export default function IndustrySpecialization() {
                                         {t('home.wiremeshes')}
                                     </h3>
 
-                                    <p className="text-[#71717A] text-sm mt-2 max-w-[260px] line-clamp-3">
+                                    <p className="text-[#71717A] text-sm mt-2 w-full line-clamp-3">
                                         {t('home.wireMeshesDesc')}
                                     </p>
                                 </div>
@@ -75,7 +75,7 @@ export default function IndustrySpecialization() {
                                         {t('home.cuttingBending')}
                                     </h3>
 
-                                    <p className="text-[#71717A] text-sm mt-2 max-w-[260px] line-clamp-3">
+                                    <p className="text-[#71717A] text-sm mt-2 w-full line-clamp-3">
                                         {t('home.cuttingBendingDesc')}
                                     </p>
                                 </div>
@@ -107,7 +107,7 @@ export default function IndustrySpecialization() {
                                         {t('home.mediumCarbon')}
                                     </h3>
 
-                                    <p className="text-[#71717A] text-sm mt-2 max-w-[260px] line-clamp-3">
+                                    <p className="text-[#71717A] text-sm mt-2 w-full line-clamp-3">
                                         {t('home.mediumCarbonDesc')}
                                     </p>
                                 </div>
