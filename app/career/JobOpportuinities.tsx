@@ -16,7 +16,7 @@ export default function JobOpportunities() {
 
             <div className="max-w-[1500px] w-full mx-auto">
 
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col lg:gap-40 gap-20">
 
                     <div className="flex flex-col gap-4 uppercase">
                         <div className="text-[#F97316] tracking-[0.3em] text-xs">
