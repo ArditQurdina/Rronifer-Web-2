@@ -155,9 +155,12 @@ export default function JobOpportunities() {
 
                                         <DatePicker
                                             selected={startDate}
-                                            onChange={(date: Date | null) => setStartDate(date)} 
-                                            dateFormat="dd.MM.yyyy"
+                                            onChange={(date: Date | null) => setStartDate(date)}
+                                            dateFormat="dd/MM/yyyy"
                                             placeholderText="dd.mm.yyyy"
+                                            showYearDropdown
+                                            showMonthDropdown
+                                            dropdownMode="select"
                                             className="bg-[#18181B] rounded-lg border border-[#3F3F46] py-3 px-4 text-white placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-gray-400 w-full"
                                         />
                                     </div>
