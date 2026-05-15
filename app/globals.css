@@ -248,3 +248,37 @@ select:focus {
 .animate-fadeInUp {
   animation: fadeInUp 1s ease-out forwards;
 }
+
+@keyframes menuOpen {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes menuClose {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
+.animate-menu-open {
+  transform-origin: top;
+  animation: menuOpen 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-menu-close {
+  transform-origin: top;
+  animation: menuClose 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
