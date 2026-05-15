@@ -415,8 +415,10 @@
             "titleLine1": "Feder",
             "titleLine2": "stahl",
             "description": "Hochwertiger Werkstoff für mechanische Federn und Automobilkomponenten. Optimierte Kohlenstoffgehalte von 0,45 % bis 0,72 % für ideale Härte- und Flexibilitätsbalance.",
-            "compliance": "Normkonformität",
-            "carbon": "Kohlenstoffgehalt"
+            "primaryCompliance": "Primäre Compliance",
+            "carbon": "Kohlenstoffgehalt",
+            "maxTensile": "Maximale zugkraft",
+            "maxTorsion": "Maximale torsion"
         },
         "diameter": {
             "title": "Durchmesser-Variationsmatrix",

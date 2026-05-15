@@ -60,22 +60,29 @@ export default function ElasticityEndurance() {
                             {/* Compliance */}
                             <div className="flex flex-col gap-2 px-4 py-6 2xl:px-4 xl:px-3 lg:px-2 2xl:py-6 xl:py-5 lg:py-4 bg-[#121213] z-50">
                                 <div className="text-[#9CA3AF] text-[11px]">
-                                    {t("products.elasticity.compliance")}
+                                    {t("products.elasticity.primaryCompliance")}
                                 </div>
 
-                                <div className="flex items-center gap-4">
-                                    <div className="text-[#FF6B00] text-lg font-bold">DIN 10132</div>
-                                    <div className="text-lg font-bold">/</div>
-                                    <div className="text-[#FF6B00] text-lg font-bold">EN 40140</div>
+                                <div className="flex flex-col gap-2">
+                                    <div className="text-[#FF6B00] text-lg font-bold">TS2500-1</div>
+                                    <div className="text-[#FF6B00] text-lg font-bold">EN 10270-1</div>
                                 </div>
                             </div>
 
                             {/* Carbon */}
                             <div className="flex items-center justify-between px-4 py-6 bg-[#121213] z-50 shadow-lg">
-                                <div className="text-[11px]">
-                                    {t("products.elasticity.carbon")}
+                                <div>
+                                    <div className="text-[11px]">
+                                        {t("products.elasticity.maxTensile")}
+                                    </div>
+                                    <div className="text-lg font-bold">2130N/mm²</div>
                                 </div>
-                                <div className="text-lg font-bold">0.65%</div>
+                                <div>
+                                    <div className="text-[11px]">
+                                        {t("products.elasticity.maxTorsion")}
+                                    </div>
+                                    <div className="text-lg font-bold">25%</div>
+                                </div>
                             </div>
 
                         </div>

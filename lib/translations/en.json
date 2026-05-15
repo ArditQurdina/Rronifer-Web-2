@@ -422,8 +422,10 @@
             "titleLine1": "Spring",
             "titleLine2": "Steel",
             "description": "High-yield raw material designed for mechanical springs and automotive components. Optimized carbon grades ranging from 0.45% to 0.72% for the perfect hardness-flexibility balance.",
-            "compliance": "Compliance Standards",
-            "carbon": "Carbon Content"
+            "primaryCompliance": "Primary Compliance",
+            "carbon": "Carbon Content",
+            "maxTensile": "Max Tensile",
+            "maxTorsion": "Max Torsion"
         },
         "diameter": {
             "title": "Diameter Variance Matrix",

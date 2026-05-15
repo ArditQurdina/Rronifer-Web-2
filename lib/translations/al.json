@@ -423,8 +423,10 @@
             "titleLine1": "Çelik për",
             "titleLine2": "Susta",
             "description": "Material me rezistencë të lartë i projektuar për susta mekanike dhe komponentë automobilistikë. Gradat e karbonit të optimizuara nga 0.45% deri në 0.72% sigurojnë balancën perfekte mes fortësisë dhe fleksibilitetit.",
-            "compliance": "Standardet e përputhshmërisë",
-            "carbon": "Përmbajtja e karbonit"
+            "primaryCompliance": "Përputhshmëria bazë",
+            "carbon": "Përmbajtja e karbonit",
+            "maxTensile": "Tërheqja maksimale",
+            "maxTorsion": "Rrotullimi maksimal"
         },
         "diameter": {
             "title": "Matrica e variacionit të diametrit",
