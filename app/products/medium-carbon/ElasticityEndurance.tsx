@@ -25,7 +25,7 @@ export default function ElasticityEndurance() {
                                 <h1 className="m-0 leading-none">
                                     {t("products.elasticity.titleLine1")}
                                 </h1>
-                                <h1 className="m-0 leading-none -mt-1 md:-mt-5">
+                                <h1 className="m-0 leading-none -mt-1 md:-mt-3">
                                     {t("products.elasticity.titleLine2")}
                                 </h1>
                             </div>
