@@ -7,12 +7,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+
 export default function Header() {
     const [open, setOpen] = useState(false);
+    const [closing, setClosing] = useState(false);
     const [pathname, setPathname] = useState("");
     const router = useRouter();
     const currentPathname = usePathname();
     const { language, setLanguage, t } = useLanguage();
+    const closeMenu = () => {
+        setClosing(true);
+
+        setTimeout(() => {
+            setOpen(false);
+            setClosing(false);
+        }, 400);
+    };
+
+    const toggleMenu = () => {
+        if (open) {
+            closeMenu();
+        } else {
+            setOpen(true);
+        }
+    };
 
     useEffect(() => {
         setPathname(currentPathname);
@@ -143,7 +161,7 @@ export default function Header() {
                     </div>
 
                     <button
-                        onClick={() => setOpen(!open)}
+                        onClick={toggleMenu}
                         className="lg:hidden flex flex-col gap-1"
                     >
                         <span className="w-6 h-[2px] bg-white"></span>
@@ -152,14 +170,17 @@ export default function Header() {
                     </button>
                 </div>
 
-                {open && (
-                    <div className="lg:w-auto w-full lg:hidden absolute top-full right-0 bg-black border-t z-80 border-[#2A2A2E]">
+                {(open || closing) && (
+                    <div
+                        className={`lg:hidden absolute top-full right-0 w-full bg-black border-t border-[#2A2A2E]
+                        ${closing ? "animate-menu-close" : "animate-menu-open"}`}
+                    >
                         <ul className="flex flex-col gap-6 p-6 uppercase text-[11px] font-semibold tracking-widest">
                             <li>
-                                <Link href="/" className={isActiveLink("/") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.home')}</Link>
+                                <Link href="/" onClick={closeMenu} className={isActiveLink("/") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.home')}</Link>
                             </li>
                             <li>
-                                <Link href="/about-us" className={isActiveLink("/about-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>
+                                <Link href="/about-us" onClick={closeMenu} className={isActiveLink("/about-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>
                                     {t('nav.aboutUs')}
                                 </Link>
                             </li>
@@ -171,6 +192,7 @@ export default function Header() {
 
                                         <span
                                             onClick={() => {
+                                                closeMenu();
                                                 router.push("/products");
                                                 setOpen(false);
                                             }}
@@ -181,8 +203,6 @@ export default function Header() {
                                         >
                                             {t('nav.products')}
                                         </span>
-
-                                        {/* CLICK ICON → TOGGLE DROPDOWN */}
                                         <button
                                             type="button"
                                             onClick={(e) => {
@@ -202,10 +222,10 @@ export default function Header() {
 
                                         <Link
                                             href="/products/wire-mesh"
-                                            onClick={() => setOpen(false)}
+                                            onClick={closeMenu}
                                             className={`word-break ${isActiveLink("/products/wire-mesh")
-                                                    ? "text-[#F97316] font-bold"
-                                                    : ""
+                                                ? "text-[#F97316] font-bold"
+                                                : ""
                                                 }`}
                                         >
                                             {t('nav.wireMesh')}
@@ -213,10 +233,10 @@ export default function Header() {
 
                                         <Link
                                             href="/products/cutting-bending"
-                                            onClick={() => setOpen(false)}
+                                            onClick={closeMenu}
                                             className={`word-break ${isActiveLink("/products/cutting-bending")
-                                                    ? "text-[#F97316] font-bold"
-                                                    : ""
+                                                ? "text-[#F97316] font-bold"
+                                                : ""
                                                 }`}
                                         >
                                             {t('nav.cuttingBanding')}
@@ -224,10 +244,10 @@ export default function Header() {
 
                                         <Link
                                             href="/products/medium-carbon"
-                                            onClick={() => setOpen(false)}
+                                            onClick={closeMenu}
                                             className={`word-break ${isActiveLink("/products/medium-carbon")
-                                                    ? "text-[#F97316] font-bold"
-                                                    : ""
+                                                ? "text-[#F97316] font-bold"
+                                                : ""
                                                 }`}
                                         >
                                             {t('nav.mediumCarbon')}
@@ -235,15 +255,15 @@ export default function Header() {
 
                                     </div>
                                 </div>
-                            </li>                            
-                            <li>
-                                <Link href="/media" className={isActiveLink("/media") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.media')}</Link>
                             </li>
                             <li>
-                                <Link href="/career" className={isActiveLink("/career") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.career')}</Link>
+                                <Link href="/media" onClick={closeMenu} className={isActiveLink("/media") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.media')}</Link>
                             </li>
                             <li>
-                                <Link href="/contact-us" className={`${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : "text-white"}`}>{t('nav.getInTouch')}</Link>
+                                <Link href="/career" onClick={closeMenu} className={isActiveLink("/career") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.career')}</Link>
+                            </li>
+                            <li>
+                                <Link href="/contact-us" onClick={closeMenu} className={`${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : "text-white"}`}>{t('nav.getInTouch')}</Link>
                             </li>
                             {/* Mobile Language Toggle */}
                             <li className="flex gap-3">
