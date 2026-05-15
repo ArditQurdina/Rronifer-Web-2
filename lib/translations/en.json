@@ -163,10 +163,10 @@
         "fileDragText": "Drag and drop your files here or click to browse",
         "fileHint": "(PDF, DOCX (Max 10MB))",
         "cv": "Upload CV",
-        "submit": "Apply_For_Position",
+        "submit": "Apply for Position",
         "message": "Message Context",
         "messagePlaceholder": "Briefly describe  your requirements...",
-        "sendDispatch": "Send_Dispatch",
+        "sendDispatch": "Send Dispatch",
         "loading": "Sending...",
         "consent": "I agree that according to the law on protection of personal data NO. 06/L-082, with the self-submission of my personal information, Rronifer may process this data during the recruitment and selection process."
     },
