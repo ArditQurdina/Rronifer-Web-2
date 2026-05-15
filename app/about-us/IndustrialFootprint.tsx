@@ -120,9 +120,9 @@ export default function IndustrialFootprint() {
                     <div className="flex-1 w-full border border-t-0 border-[#2A2A2E] p-8 md:p-10 flex flex-col justify-center gap-6">
 
                         <div className="flex flex-col gap-3">
-                            <h2 className="text-3xl md:text-4xl font-extrabold">
-                                {integratedTechFacility.toLocaleString()}m
-                            </h2>
+                            <h2 className="text-3xl md:text-4xl font-extrabold lowercase">
+                                {`${integratedTechFacility.toLocaleString()} m²`}
+                            </h2>                            
                             <h3 className="text-[10px] md:text-xs text-[#F97316] tracking-[0.2em]">
                                 {t('about.integratedTechFacility')}
                             </h3>
