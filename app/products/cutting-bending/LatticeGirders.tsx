@@ -31,7 +31,7 @@ export default function LatticeGirders() {
 
                         </div>
 
-                        <p className="text-[#6B7280] max-w-[400px]">
+                        <p className="text-[#6B7280]">
                             {t("products.lattice.description")}
                         </p>
 

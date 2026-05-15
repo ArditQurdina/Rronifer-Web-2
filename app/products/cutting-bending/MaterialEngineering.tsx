@@ -30,7 +30,7 @@ export default function MaterialEngineering() {
 
                             </div>
 
-                            <p className="text-[#6B7280] w-[400px]">
+                            <p className="text-[#6B7280]">
                                 {t("products.b500a.description")}
                             </p>
 
@@ -81,7 +81,7 @@ export default function MaterialEngineering() {
                             alt="B500A Steel"
                             width={800}
                             height={600}
-                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105"
+                            className="w-full h-auto object-contain opacity-0 animate-fadeInUp transition-all duration-700 hover:scale-105 "
                         />
 
                         <div className="flex items-center justify-between gap-8 bg-[#121213] uppercase w-full text-xs tracking-[0.2em] p-6">
