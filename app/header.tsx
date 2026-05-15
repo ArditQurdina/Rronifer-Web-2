@@ -189,7 +189,7 @@ export default function Header() {
                                 <Link href="/contact-us" className={`${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : "text-white"}`}>{t('nav.getInTouch')}</Link>
                             </li>
                             {/* Mobile Language Toggle */}
-                            <li className="flex gap-3 pt-2">
+                            <li className="flex gap-3">
                                 <button
                                     onClick={() => setLanguage('al')}
                                     className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'al' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
