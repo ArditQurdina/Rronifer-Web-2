@@ -164,21 +164,78 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <details className="cursor-pointer">
-                                    <summary className={`flex items-center gap-2 cursor-pointer ${isActiveLink("/products") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}`}>{t('nav.products')}</summary>
-                                    <div className="pl-4 mt-2 flex flex-col gap-2">
-                                        <Link href="/products/wire-mesh" className={` word-break ${isActiveLink("/products/wire-mesh") ? "text-[#F97316] font-bold" : ""}`}>
+                                <div className="flex flex-col">
+
+                                    {/* TOP ROW */}
+                                    <div className="flex items-center">
+
+                                        <span
+                                            onClick={() => {
+                                                router.push("/products");
+                                                setOpen(false);
+                                            }}
+                                            className={`cursor-pointer ${isActiveLink("/products")
+                                                    ? "underline decoration-[#F97316] underline-offset-4 decoration-2"
+                                                    : ""
+                                                }`}
+                                        >
+                                            {t('nav.products')}
+                                        </span>
+
+                                        {/* CLICK ICON → TOGGLE DROPDOWN */}
+                                        <button
+                                            type="button"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                const el = document.getElementById("mobile-products");
+                                                if (el) el.classList.toggle("hidden");
+                                            }}
+                                            className="cursor-pointer"
+                                        >
+                                            <ChevronDown size={16} />
+                                        </button>
+
+                                    </div>
+
+                                    {/* DROPDOWN */}
+                                    <div id="mobile-products" className="pl-4 mt-2 flex flex-col gap-2 hidden">
+
+                                        <Link
+                                            href="/products/wire-mesh"
+                                            onClick={() => setOpen(false)}
+                                            className={`word-break ${isActiveLink("/products/wire-mesh")
+                                                    ? "text-[#F97316] font-bold"
+                                                    : ""
+                                                }`}
+                                        >
                                             {t('nav.wireMesh')}
                                         </Link>
-                                        <Link href="/products/cutting-bending" className={`word-break ${isActiveLink("/products/cutting-bending") ? "text-[#F97316] font-bold" : ""}`}>
+
+                                        <Link
+                                            href="/products/cutting-bending"
+                                            onClick={() => setOpen(false)}
+                                            className={`word-break ${isActiveLink("/products/cutting-bending")
+                                                    ? "text-[#F97316] font-bold"
+                                                    : ""
+                                                }`}
+                                        >
                                             {t('nav.cuttingBanding')}
                                         </Link>
-                                        <Link href="/products/medium-carbon" className={`word-break ${isActiveLink("/products/medium-carbon") ? "text-[#F97316] font-bold" : ""}`}>
+
+                                        <Link
+                                            href="/products/medium-carbon"
+                                            onClick={() => setOpen(false)}
+                                            className={`word-break ${isActiveLink("/products/medium-carbon")
+                                                    ? "text-[#F97316] font-bold"
+                                                    : ""
+                                                }`}
+                                        >
                                             {t('nav.mediumCarbon')}
                                         </Link>
+
                                     </div>
-                                </details>
-                            </li>
+                                </div>
+                            </li>                            
                             <li>
                                 <Link href="/media" className={isActiveLink("/media") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}>{t('nav.media')}</Link>
                             </li>
