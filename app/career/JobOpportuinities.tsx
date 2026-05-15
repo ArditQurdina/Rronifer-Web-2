@@ -96,7 +96,7 @@ export default function JobOpportunities() {
                                 method="POST"
                                 encType="multipart/form-data"
                             >
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full">
 
                                     {/* FULL NAME */}
                                     <div className="flex flex-col gap-1">
@@ -167,7 +167,7 @@ export default function JobOpportunities() {
                                     </div>
 
                                     {/* PHONE */}
-                                    <div className="flex flex-col gap-1 col-span-2">
+                                    <div className="flex flex-col gap-1 md:col-span-2">
                                         <label className="pl-1 uppercase text-[11px] tracking-[0.1em]" htmlFor="phoneNumber">
                                             {t('career.phone')}
                                         </label>
@@ -183,7 +183,7 @@ export default function JobOpportunities() {
                                     </div>
 
                                     {/* CV */}
-                                    <div className="col-span-2 flex flex-col gap-1">
+                                    <div className="flex flex-col gap-1 md:col-span-2">
                                         <label className="pl-1 uppercase text-[11px] tracking-[0.1em]">
                                             {t('career.cv')}
                                         </label>
@@ -191,7 +191,7 @@ export default function JobOpportunities() {
                                     </div>
 
                                     {/* CONSENT */}
-                                    <div className="col-span-2 flex items-start gap-3 max-w-full">
+                                    <div className="flex items-start gap-3 max-w-full md:col-span-2">
                                         <input type="checkbox" id="consent" className="mt-1 shrink-0" required />
                                         <label
                                             htmlFor="consent"
@@ -202,7 +202,6 @@ export default function JobOpportunities() {
                                     </div>
 
                                 </div>
-
                                 {/* SUBMIT */}
                                 <button
                                     type="submit"
