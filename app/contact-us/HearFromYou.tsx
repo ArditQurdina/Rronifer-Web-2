@@ -88,7 +88,7 @@ export default function HearFromYou() {
                                     {t("career.sectorLabel")}: {t("career.sectorValue")}
                                 </div>
 
-                                <div className="text-[#FF6B00] italic text-xs font-semibold tracking-widest">
+                                <div className="text-[#FF6B00] italic text-xs font-semibold tracking-widest break-words max-w-full">
                                     {t("career.sectorSite")}
                                 </div>
                             </div>
