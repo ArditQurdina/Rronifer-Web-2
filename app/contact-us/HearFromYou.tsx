@@ -81,14 +81,15 @@ export default function HearFromYou() {
                                     allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
-                                    className="xl:w-[650px] xl:h-[400px] w-full h-[300px] rounded-lg animate-fadeInUp transition-transform duration-700 hover:scale-105"                                ></iframe>
+                                    className="xl:w-[650px] xl:h-[400px] w-full h-[300px] rounded-lg animate-fadeInUp transition-transform duration-700 hover:scale-105"
+                                ></iframe>
                             </div>
-                            <div className="flex items-center gap-24">
+                            <div className="flex sm:flex-row flex-col sm:items-center sm:gap-24 gap-4">
                                 <div className="text-xs font-semibold tracking-widest">
                                     {t("career.sectorLabel")}: {t("career.sectorValue")}
                                 </div>
 
-                                <div className="text-[#FF6B00] italic text-xs font-semibold tracking-widest break-words max-w-full">
+                                <div className="text-[#FF6B00] italic text-xs font-semibold tracking-widest break-word max-w-full">
                                     {t("career.sectorSite")}
                                 </div>
                             </div>
