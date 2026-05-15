@@ -141,7 +141,7 @@ export default function StructuralSeriesComparison() {
                                 </div>
 
                                 <div className="bg-[#0B0F14] overflow-x-auto">
-                                    <table className="w-full text-left border-collapse min-w-md">
+                                    <table className="w-full text-left border-collapse min-w-[600px]">
 
                                         <thead>
                                             <tr className="text-[#6B7280] text-xs uppercase tracking-wider border-b border-[#1F2937]">
@@ -195,7 +195,7 @@ export default function StructuralSeriesComparison() {
                                 </div>
 
                                 <div className="bg-[#0B0F14] overflow-x-auto">
-                                    <table className="w-full text-left border-collapse min-w-md">
+                                    <table className="w-full text-left border-collapse min-w-[600px]">
 
                                         <thead>
                                             <tr className="text-[#6B7280] text-xs uppercase tracking-wider border-b border-[#1F2937]">
