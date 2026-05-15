@@ -20,57 +20,57 @@ export default function DiameterVarianceMatrix() {
                         <div className="flex flex-col lg:flex-row gap-16 lg:gap-30">
 
                             {/* TABLE */}
-                            <div className="w-full lg:w-3/4">
+                            <div className="w-full lg:w-3/4 overflow-x-auto">
+                                <div className="min-w-[600px]">
+                                    <div className="grid grid-cols-5 text-[11px] text-[#4B5563] uppercase tracking-[0.2em] border-b border-white/10 pb-4 font-extrabold">
+                                        <div>{t("products.diameter.header.diameter")}</div>
+                                        <div>{t("products.diameter.header.tolerance")}</div>
+                                        <div>{t("products.diameter.header.tensile")}</div>
+                                        <div>{t("products.diameter.header.carbon")}</div>
+                                        <div className="text-right">{t("products.diameter.header.torsion")}</div>
+                                    </div>
 
-                                <div className="grid grid-cols-5 text-[11px] text-[#4B5563] uppercase tracking-[0.2em] border-b border-white/10 pb-4 font-extrabold">
-                                    <div>{t("products.diameter.header.diameter")}</div>
-                                    <div>{t("products.diameter.header.tolerance")}</div>
-                                    <div>{t("products.diameter.header.tensile")}</div>
-                                    <div>{t("products.diameter.header.carbon")}</div>
-                                    <div className="text-right">{t("products.diameter.header.torsion")}</div>
+                                    {/* ROWS (unchanged values) */}
+                                    <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
+                                        <div className="font-bold">1.20 mm</div>
+                                        <div className="text-sm text-[#9CA3AF]">0.02 mm</div>
+                                        <div className="text-sm">1870 – 2100 N/mm²</div>
+                                        <div className="text-sm">0.65</div>
+                                        <div className="text-right text-[#FF6B00] font-semibold">25%</div>
+                                    </div>
+
+                                    <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
+                                        <div className="font-bold text-[#FF6B00]">1.30 mm</div>
+                                        <div className="text-sm text-[#9CA3AF]">0.02 mm</div>
+                                        <div className="text-sm">1870 – 2130 N/mm²</div>
+                                        <div className="text-xs text-[#9CA3AF]">0.45 – 0.65</div>
+                                        <div className="text-right font-semibold">25%</div>
+                                    </div>
+
+                                    <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
+                                        <div className="font-bold">1.70 mm</div>
+                                        <div className="text-sm text-[#9CA3AF]">0.025 mm</div>
+                                        <div className="text-sm">1790 – 2010 N/mm²</div>
+                                        <div className="text-sm">0.72</div>
+                                        <div className="text-right">22%</div>
+                                    </div>
+
+                                    <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
+                                        <div className="font-bold">2.10 mm</div>
+                                        <div className="text-sm text-[#9CA3AF]">0.025 mm</div>
+                                        <div className="text-sm">1720 – 1990 N/mm²</div>
+                                        <div className="text-sm">0.65</div>
+                                        <div className="text-right">22%</div>
+                                    </div>
+
+                                    <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
+                                        <div className="font-bold">3.80 mm</div>
+                                        <div className="text-sm text-[#9CA3AF]">0.025 mm</div>
+                                        <div className="text-sm">1270 – 1370 N/mm²</div>
+                                        <div className="text-xs text-[#9CA3AF]">0.68</div>
+                                        <div className="text-right text-[#6B7280]">18%</div>
+                                    </div>
                                 </div>
-
-                                {/* ROWS (unchanged values) */}
-                                <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
-                                    <div className="font-bold">1.20 mm</div>
-                                    <div className="text-sm text-[#9CA3AF]">0.02 mm</div>
-                                    <div className="text-sm">1870 – 2100</div>
-                                    <div className="text-sm">0.65</div>
-                                    <div className="text-right text-[#FF6B00] font-semibold">25%</div>
-                                </div>
-
-                                <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
-                                    <div className="font-bold text-[#FF6B00]">1.30 mm</div>
-                                    <div className="text-sm text-[#9CA3AF]">0.02 mm</div>
-                                    <div className="text-sm">1870 – 2130</div>
-                                    <div className="text-xs text-[#9CA3AF]">0.45 – 0.65</div>
-                                    <div className="text-right font-semibold">25%</div>
-                                </div>
-
-                                <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
-                                    <div className="font-bold">1.70 mm</div>
-                                    <div className="text-sm text-[#9CA3AF]">0.025 mm</div>
-                                    <div className="text-sm">1790 – 2010</div>
-                                    <div className="text-sm">0.72</div>
-                                    <div className="text-right">22%</div>
-                                </div>
-
-                                <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
-                                    <div className="font-bold">2.10 mm</div>
-                                    <div className="text-sm text-[#9CA3AF]">0.025 mm</div>
-                                    <div className="text-sm">1720 – 1990</div>
-                                    <div className="text-sm">0.65</div>
-                                    <div className="text-right">22%</div>
-                                </div>
-
-                                <div className="grid grid-cols-5 py-6 border-b border-white/5 items-center">
-                                    <div className="font-bold">3.80 mm</div>
-                                    <div className="text-sm text-[#9CA3AF]">0.025 mm</div>
-                                    <div className="text-sm">1270 – 1370</div>
-                                    <div className="text-xs text-[#9CA3AF]">0.68</div>
-                                    <div className="text-right text-[#6B7280]">18%</div>
-                                </div>
-
                             </div>
 
                             {/* RIGHT */}
