@@ -75,7 +75,7 @@ export default function ElasticityEndurance() {
                                 <div className="text-[11px]">
                                     {t("products.elasticity.carbon")}
                                 </div>
-                                <div className="text-lg font-bold">0.55%</div>
+                                <div className="text-lg font-bold">0.65%</div>
                             </div>
 
                         </div>
