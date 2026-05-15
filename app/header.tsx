@@ -167,13 +167,13 @@ export default function Header() {
                                 <details className="cursor-pointer">
                                     <summary className={`flex items-center gap-2 cursor-pointer ${isActiveLink("/products") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : ""}`}>{t('nav.products')}</summary>
                                     <div className="pl-4 mt-2 flex flex-col gap-2">
-                                        <Link href="/products/wire-mesh" className={`text-[#F97316] word-break ${isActiveLink("/products/wire-mesh") ? "font-bold" : ""}`}>
+                                        <Link href="/products/wire-mesh" className={` word-break ${isActiveLink("/products/wire-mesh") ? "text-[#F97316] font-bold" : ""}`}>
                                             {t('nav.wireMesh')}
                                         </Link>
-                                        <Link href="/products/cutting-bending" className={`text-[#F97316] word-break ${isActiveLink("/products/cutting-bending") ? "font-bold" : ""}`}>
+                                        <Link href="/products/cutting-bending" className={`word-break ${isActiveLink("/products/cutting-bending") ? "text-[#F97316] font-bold" : ""}`}>
                                             {t('nav.cuttingBanding')}
                                         </Link>
-                                        <Link href="/products/medium-carbon" className={`text-[#F97316] word-break ${isActiveLink("/products/medium-carbon") ? "font-bold" : ""}`}>
+                                        <Link href="/products/medium-carbon" className={`word-break ${isActiveLink("/products/medium-carbon") ? "text-[#F97316] font-bold" : ""}`}>
                                             {t('nav.mediumCarbon')}
                                         </Link>
                                     </div>
@@ -189,7 +189,7 @@ export default function Header() {
                                 <Link href="/contact-us" className={`${isActiveLink("/contact-us") ? "underline decoration-[#F97316] underline-offset-4 decoration-2" : "text-white"}`}>{t('nav.getInTouch')}</Link>
                             </li>
                             {/* Mobile Language Toggle */}
-                            <li className="flex gap-3 pt-2 border-t border-[#27272A]">
+                            <li className="flex gap-3 pt-2">
                                 <button
                                     onClick={() => setLanguage('al')}
                                     className={`text-[11px] font-semibold tracking-widest uppercase transition-colors ${language === 'al' ? 'text-[#F97316]' : 'text-white hover:text-[#F97316]'
