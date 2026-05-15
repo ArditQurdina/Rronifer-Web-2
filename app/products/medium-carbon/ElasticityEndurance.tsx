@@ -75,13 +75,13 @@ export default function ElasticityEndurance() {
                                     <div className="text-[11px]">
                                         {t("products.elasticity.maxTensile")}
                                     </div>
-                                    <div className="text-lg font-bold">2130N/mm²</div>
+                                    <div className="text-xl font-bold">2130N/mm²</div>
                                 </div>
                                 <div>
                                     <div className="text-[11px]">
                                         {t("products.elasticity.maxTorsion")}
                                     </div>
-                                    <div className="text-lg font-bold">25%</div>
+                                    <div className="text-xl font-bold">25%</div>
                                 </div>
                             </div>
 
